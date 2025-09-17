@@ -1,7 +1,7 @@
 {
-  "name": "@oriondesign/n8n-nodes-evolution-api-i18n",
+  "name": "n8n-nodes-evolution-api-i18n",
   "version": "1.0.5",
-  "description": "Evolution API is a channel hub focused on WhatsApp",
+  "description": "Unofficial Evolution API n8n node package, a channel hub focused on WhatsApp with added i18n support",
   "keywords": [
     "n8n-community-node-package"
   ],
@@ -12,11 +12,13 @@
     "email": "contato@oriondesign.art.br"
   },
   "contributors": [
-    { "name": "Original Authors of n8n-nodes-evolution-api" }
+    {
+      "name": "Original Authors of n8n-nodes-evolution-api"
+    }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/oriondesign2015/n8n-nodes-evolution-api.git"
+    "url": "https://github.com/desarrollonextpro/n8n-nodes-evolution-api"
   },
   "engines": {
     "node": ">=18.10",
