@@ -7,18 +7,19 @@ import {
 } from 'n8n-workflow';
 import { evolutionNodeProperties } from './properties';
 import { resourceOperationsFunctions } from './execute';
+import { getTranslations, t } from './utils/i18n';
 
 export class EvolutionApi implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Evolution API',
+		displayName: getTranslations('en').evolutionApi.displayName,
 		name: 'evolutionApi',
 		icon: 'file:evolutionapi.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',
-		description: 'Interact with Evolution API',
+		description: getTranslations('en').evolutionApi.description,
 		defaults: {
-			name: 'Evolution API',
+			name: getTranslations('en').evolutionApi.defaultName,
 		},
 		// @ts-ignore
 		inputs: ['main'],
@@ -55,8 +56,11 @@ export class EvolutionApi implements INodeType {
 		// Se não encontrar a função, retorna um erro
 		if (!fn) {
 			throw new NodeApiError(this.getNode(), {
-				message: 'Operação não suportada.',
-				description: `A função "${operation}" para o recurso "${resource}" não é suportada!`,
+				message: t(this, 'evolutionApi.errors.operationNotSupported'),
+				description: t(this, 'evolutionApi.errors.functionNotSupported', {
+					operation,
+					resource,
+				}),
 			});
 		}
 

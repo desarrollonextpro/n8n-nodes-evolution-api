@@ -1,0 +1,102 @@
+{
+  "evolutionApi": {
+    "displayName": "Evolution API",
+    "description": "Interact with Evolution API",
+    "defaultName": "Evolution API",
+    "resource": {
+      "displayName": "Resource",
+      "instances": "Instance",
+      "messages": "Message",
+      "chat": "Chat",
+      "groups": "Group",
+      "profile": "Profile",
+      "events": "Event",
+      "integrations": "Integration"
+    },
+    "operations": {
+      "instances": {
+        "createBasic": "Create Basic Instance",
+        "delete": "Delete Instance",
+        "fetch": "Fetch Instances",
+        "connect": "Connect Instance",
+        "settings": "Instance Settings",
+        "setPresence": "Set Presence",
+        "logout": "Logout Instance",
+        "restart": "Restart Instance",
+        "setProxy": "Set Proxy"
+      },
+      "messages": {
+        "sendText": "Send Text",
+        "sendImage": "Send Image",
+        "sendAudio": "Send Audio",
+        "sendVideo": "Send Video",
+        "sendDocument": "Send Document",
+        "sendContact": "Send Contact",
+        "sendList": "Send List",
+        "sendButtons": "Send Buttons",
+        "sendPoll": "Send Poll",
+        "sendReaction": "Send Reaction",
+        "sendStories": "Send Stories",
+        "sendPix": "Send PIX"
+      },
+      "chat": {
+        "findMessages": "Find Messages",
+        "readMessages": "Read Messages",
+        "deleteMessage": "Delete Message",
+        "updateMessage": "Update Message",
+        "fetchProfilePicture": "Fetch Profile Picture",
+        "blockContact": "Block Contact",
+        "checkNumber": "Check Number",
+        "findChats": "Find Chats",
+        "findContacts": "Find Contacts",
+        "findStatusMessages": "Find Status Messages",
+        "getMediaBase64": "Get Media Base64",
+        "manageArchive": "Manage Archive",
+        "markChatUnread": "Mark Chat Unread",
+        "sendPresence": "Send Presence"
+      },
+      "groups": {
+        "createGroup": "Create Group",
+        "fetchGroups": "Fetch Groups",
+        "fetchInviteCode": "Fetch Invite Code",
+        "joinGroup": "Join Group",
+        "leaveGroup": "Leave Group",
+        "findParticipants": "Find Participants",
+        "revokeInviteCode": "Revoke Invite Code",
+        "sendInviteLink": "Send Invite Link",
+        "toggleEphemeral": "Toggle Ephemeral",
+        "updateGroupDescription": "Update Group Description",
+        "updateGroupName": "Update Group Name",
+        "updateGroupPicture": "Update Group Picture",
+        "updateSettings": "Update Settings",
+        "updateParticipants": "Update Participants"
+      },
+      "profile": {
+        "fetchProfile": "Fetch Profile",
+        "fetchPrivacySettings": "Fetch Privacy Settings",
+        "fetchBusinessProfile": "Fetch Business Profile",
+        "removeProfilePicture": "Remove Profile Picture",
+        "updateProfileName": "Update Profile Name",
+        "updatePrivacySettings": "Update Privacy Settings",
+        "updateProfilePicture": "Update Profile Picture",
+        "updateProfileStatus": "Update Profile Status"
+      },
+      "events": {
+        "setWebhook": "Set Webhook",
+        "setRabbitMQ": "Set RabbitMQ",
+        "setProxy": "Set Proxy"
+      },
+      "integrations": {
+        "setChatwoot": "Set Chatwoot",
+        "setDifyBot": "Set Dify Bot",
+        "setEvolutionBot": "Set Evolution Bot",
+        "setTypebot": "Set Typebot",
+        "setFlowiseBot": "Set Flowise Bot"
+      }
+    },
+    "errors": {
+      "operationNotSupported": "Operation not supported.",
+      "functionNotSupported": "The function \"{{operation}}\" for resource \"{{resource}}\" is not supported!"
+    }
+  }
+}

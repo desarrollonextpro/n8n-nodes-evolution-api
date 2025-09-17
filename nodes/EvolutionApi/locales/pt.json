@@ -1,0 +1,102 @@
+{
+  "evolutionApi": {
+    "displayName": "Evolution API",
+    "description": "Interagir com Evolution API",
+    "defaultName": "Evolution API",
+    "resource": {
+      "displayName": "Recurso",
+      "instances": "Instância",
+      "messages": "Mensagem",
+      "chat": "Chat",
+      "groups": "Grupo",
+      "profile": "Perfil",
+      "events": "Evento",
+      "integrations": "Integração"
+    },
+    "operations": {
+      "instances": {
+        "createBasic": "Criar Instância Básica",
+        "delete": "Excluir Instância",
+        "fetch": "Buscar Instâncias",
+        "connect": "Conectar Instância",
+        "settings": "Configurações da Instância",
+        "setPresence": "Definir Presença",
+        "logout": "Sair da Instância",
+        "restart": "Reiniciar Instância",
+        "setProxy": "Definir Proxy"
+      },
+      "messages": {
+        "sendText": "Enviar Texto",
+        "sendImage": "Enviar Imagem",
+        "sendAudio": "Enviar Áudio",
+        "sendVideo": "Enviar Vídeo",
+        "sendDocument": "Enviar Documento",
+        "sendContact": "Enviar Contato",
+        "sendList": "Enviar Lista",
+        "sendButtons": "Enviar Botões",
+        "sendPoll": "Enviar Enquete",
+        "sendReaction": "Enviar Reação",
+        "sendStories": "Enviar Stories",
+        "sendPix": "Enviar PIX"
+      },
+      "chat": {
+        "findMessages": "Buscar Mensagens",
+        "readMessages": "Ler Mensagens",
+        "deleteMessage": "Excluir Mensagem",
+        "updateMessage": "Atualizar Mensagem",
+        "fetchProfilePicture": "Buscar Foto do Perfil",
+        "blockContact": "Bloquear Contato",
+        "checkNumber": "Verificar Número",
+        "findChats": "Buscar Chats",
+        "findContacts": "Buscar Contatos",
+        "findStatusMessages": "Buscar Mensagens de Status",
+        "getMediaBase64": "Obter Mídia Base64",
+        "manageArchive": "Gerenciar Arquivo",
+        "markChatUnread": "Marcar Chat como Não Lido",
+        "sendPresence": "Enviar Presença"
+      },
+      "groups": {
+        "createGroup": "Criar Grupo",
+        "fetchGroups": "Buscar Grupos",
+        "fetchInviteCode": "Buscar Código de Convite",
+        "joinGroup": "Entrar no Grupo",
+        "leaveGroup": "Sair do Grupo",
+        "findParticipants": "Buscar Participantes",
+        "revokeInviteCode": "Revogar Código de Convite",
+        "sendInviteLink": "Enviar Link de Convite",
+        "toggleEphemeral": "Alternar Efêmero",
+        "updateGroupDescription": "Atualizar Descrição do Grupo",
+        "updateGroupName": "Atualizar Nome do Grupo",
+        "updateGroupPicture": "Atualizar Foto do Grupo",
+        "updateSettings": "Atualizar Configurações",
+        "updateParticipants": "Atualizar Participantes"
+      },
+      "profile": {
+        "fetchProfile": "Buscar Perfil",
+        "fetchPrivacySettings": "Buscar Configurações de Privacidade",
+        "fetchBusinessProfile": "Buscar Perfil Comercial",
+        "removeProfilePicture": "Remover Foto do Perfil",
+        "updateProfileName": "Atualizar Nome do Perfil",
+        "updatePrivacySettings": "Atualizar Configurações de Privacidade",
+        "updateProfilePicture": "Atualizar Foto do Perfil",
+        "updateProfileStatus": "Atualizar Status do Perfil"
+      },
+      "events": {
+        "setWebhook": "Definir Webhook",
+        "setRabbitMQ": "Definir RabbitMQ",
+        "setProxy": "Definir Proxy"
+      },
+      "integrations": {
+        "setChatwoot": "Definir Chatwoot",
+        "setDifyBot": "Definir Bot Dify",
+        "setEvolutionBot": "Definir Bot Evolution",
+        "setTypebot": "Definir Typebot",
+        "setFlowiseBot": "Definir Bot Flowise"
+      }
+    },
+    "errors": {
+      "operationNotSupported": "Operação não suportada.",
+      "functionNotSupported": "A função \"{{operation}}\" para o recurso \"{{resource}}\" não é suportada!"
+    }
+  }
+}

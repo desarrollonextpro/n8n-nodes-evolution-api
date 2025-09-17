@@ -1,4 +1,3 @@
-import { INodeProperties } from 'n8n-workflow';
 import { eventsFields as eventsFields } from './events.fields';
 import { instancesFields } from './instances.fields';
 import { integrationsFields as integrationsFields } from './integrations.fields';
@@ -13,46 +12,11 @@ import { chatFields } from './chat.fields';
 import { chatOperations } from './chat.operations';
 import { profileFields } from './profile.fields';
 import { profileOperationsOptions } from './profile.operations';
-const resourcesOptions: INodeProperties = {
-	displayName: 'Recurso',
-	name: 'resource',
-	type: 'options',
-	noDataExpression: true,
-	options: [
-		{
-			name: 'Instancia',
-			value: 'instances-api',
-		},
-		{
-			name: 'Mensagem',
-			value: 'messages-api',
-		},
-		{
-			name: 'Grupo',
-			value: 'groups-api',
-		},
-		{
-			name: 'Chat',
-			value: 'chat-api',
-		},
-		{
-			name: 'Perfil',
-			value: 'profile-api',
-		},
-		{
-			name: 'Evento',
-			value: 'events-api',
-		},
-		{
-			name: 'Integração',
-			value: 'integrations-api',
-		},
-	],
-	default: 'instances-api',
-};
-
+import { resources } from './resources';
+import { localeSelector } from '../utils/locale-selector';
 export const evolutionNodeProperties = [
-	resourcesOptions,
+	localeSelector,
+	resources,
 	// Funções disponíveis quando selecionado o recurso "Instancias"
 	instancesOperationsOptions,
 	// Funções disponíveis quando selecionado o recurso "Mensagens"
